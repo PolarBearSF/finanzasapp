@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finanza App</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../app.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand text-uppercase" href="../index.html">general</a>
+            <a class="navbar-brand text-uppercase" href="egresos.html">egreso</a>
+            <a class="navbar-brand text-uppercase" href="ingresos.html">ingreso</a>
+        </nav>
+        <div class="container">
+
+            <!-- APPLICATION -->
+            <div id="app" class="row pt-5">
+                
+                <!-- FORM -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-uppercase text-center">
+                            <h4>agregar nuevo egreso</h4>
+                        </div>
+                        <form action="#" id="product_form" class="card-body">
+                            <div class="Item-group">
+                                <input type="date" name="date_product" class="form-control">
+                            </div>
+                            <div class="Item-group">
+                                <input type="text" name="description_product" placeholder="Descripcion" class="form-control">
+                            </div>
+                            <div class="Item-group">
+                                <!-- <ul name="egresos_list"></ul> -->
+                                <select id="select_egresos" class="form-control text-uppercase"></select>
+                            </div>
+                            <div class="Item-group">
+                                <input type="number" name="price_product" min= 0 placeholder="$" class="form-control">
+                            </div>
+    
+                            <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+                        </form>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        
+        <script src="../app/utils.js"></script>
+        <script src="../app/selec_egresos.js"></script>
+       
+</body>
+
+</html>
